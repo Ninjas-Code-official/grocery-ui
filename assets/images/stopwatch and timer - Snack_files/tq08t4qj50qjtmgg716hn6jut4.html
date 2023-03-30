@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<!-- saved from url=(0372)https://appetize.io/embed/tq08t4qj50qjtmgg716hn6jut4?autoplay=false&debug=true&device=iphone6s&deviceColor=white&embed=true&orientation=portrait&scale=76&screenOnly=true&xDocMsg=true&xdocMsg=true&params=%7B%22EXKernelLaunchUrlDefaultsKey%22:%22exp:%2F%2Fexpo.io%2F@aboutreact%2Fstopwatch-and-timer%2BPmlyY3miw1%22,%22EXKernelDisableNuxDefaultsKey%22:true%7D&osVersion=13.7 -->
+<html ng-app="appetizeApp" class="no-js embed ng-scope" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        <!--<base href="/">--><base href=".">
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#f4f4f4">
+        <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="none">
+        
+        <title ng-bind="pageTitle" class="ng-binding">Embed</title>
+        <meta name="description" content="Online web based iOS Simulators and Android Emulators. Run iPhone, iPad, Mobile Safari, APK, mobile apps in your browser with HTML5 and Javascript. For mobile app customer support, training, app previews, testing, and much more.">
+        <meta name="author" content="Appetize.io">
+        <link rel="apple-touch-icon" href="https://appetize.io/images/logo1_colored_background_padded_extra.png">
+        <meta property="og:site_name" content="Appetize.io">
+        <meta property="og:description" content="Stream iOS &amp; Android Native Apps in the Browser. For embedding apps in websites, development, client demos, testing and more.">
+        <meta property="og:image" content="https://appetize.io/images/logo1_colored_background_padded.png">
+        <meta property="og:title" content="Appetize.io">
+        <meta property="og:type" content="website">
+        <meta property="twitter:card" content="summary">
+        <meta property="twitter:site" content="@appetizeio">
+        <meta property="twitter:title" content="Appetize.io">
+        <meta property="twitter:description" content="Stream iOS &amp; Android Native Apps in the Browser. For embedding apps in websites, development, client demos, testing and more.">
+        <meta property="twitter:image" content="https://appetize.io/images/logo1_colored_transparent.png">
+        
+        <script type="text/javascript" async="" src="./ga.js"></script><script type="text/javascript">
+            window.isOnprem = false;
+            window.isCrawler = false;
+        </script>
+        <link href="./css(1)" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./lib.939e6670.css">
+        <link rel="stylesheet" href="./application.e948d4ef.css">
+        <meta name="fragment" content="!">
+    </head>
+
+    <body class="embed notouch">
+        <!-- ngView: --><div class="main ng-scope" ng-view=""><h1 class="sr-only ng-scope">
+    Online web based iOS Simulators and Android Emulators. Stream native mobile
+    apps in the browser with html5 and javascript.
+</h1>
+<section class="app ng-scope">
+    <div class="container">
+        <div ng-show="app || isDemo" class="">
+            <!-- ngInclude: --><div ng-include="" src="&#39;views/devices.html&#39;" class="ng-scope"><!-- ngRepeat: device in devices | reverse --><div id="devicesContainer" ng-repeat="device in devices | reverse" ng-class="{&#39;centered&#39; : device.centered}" class="text-center ng-scope">
+    <div style="display: inline-block; vertical-align: top;" ng-style="{ &#39;min-width&#39; : device.divMinWidth + &#39;px&#39; }" ng-class="{ &#39;width100&#39; : (device.debug || device.broadcastInteractions) &amp;&amp; !isEmbed }" ng-paste="device.pasteText($event);">
+        <div ng-show="device.broadcastInteractions &amp;&amp; !isEmbed" style="margin-bottom: 20px;" class="ng-hide">
+            <h5 class="text-left">Interaction History</h5>
+            <div id="interactionHistory" scroll-glue="" perfect-scrollbar="" class="cssEditor scroller text-left" placeholder="Interaction history will appear here..." style="resize: none; min-height: 160px; width: 100%; margin: 0 auto;"><pre><code class="ng-binding">[]</code></pre></div>
+            <p>
+                <span class="btn btn-sm btn-primary" style="opacity: 1 !important;" ng-click="device.downloadInteractionHistory()">Download</span>
+            </p>
+            <h5 class="text-left">Interaction History Simple</h5>
+            <div id="interactionHistorySimple" scroll-glue="" perfect-scrollbar="" class="cssEditor scroller text-left" placeholder="Interaction history will appear here..." style="resize: none; min-height: 160px; width: 100%; margin: 0 auto; margin-bottom: 10px;"><pre><code style="padding-right: 10px;" class="ng-binding">[]</code></pre></div>
+            <p>
+                <span class="btn btn-sm btn-primary" style="opacity: 1 !important;" ng-click="device.downloadInteractionHistorySimple()">Download</span>
+            </p>
+        </div>
+        <div ng-show="device.debug &amp;&amp; !isEmbed" style="opacity: .8; text-align: left; resize: none; max-width: 600px; width: 100%; margin: 0 auto;" class="ng-hide">
+            <div ng-show="device.paramsString" style="padding-bottom: 20px;">
+                params:
+                <pre class="ng-binding">{
+  "EXKernelLaunchUrlDefaultsKey": "exp://expo.io/@aboutreact/stopwatch-and-timer+PmlyY3miw1",
+  "EXKernelDisableNuxDefaultsKey": true
+}</pre>
+            </div>
+            <div ng-show="device.plistEditString" style="padding-bottom: 20px;" class="ng-hide">
+                plistEdit:
+                <pre class="ng-binding"></pre>
+            </div>
+        </div>
+        <div class="canvas-wrapper    white scale76 portrait hide-device-border iphone6s phone ios" ng-style="{&#39;width&#39;:device.canvasWrapperWidth+&#39;px&#39;, &#39;height&#39;:device.canvasWrapperHeight+&#39;px&#39;,
+        &#39;transform&#39;: &#39;translate(&#39;+device.embedTranslateX+&#39;px, &#39;+device.embedTranslateY+&#39;px)&#39;,
+        &#39;-webkit-transform&#39;: &#39;translate(&#39;+device.embedTranslateX+&#39;px, &#39;+device.embedTranslateY+&#39;px)&#39;,
+        &#39;-moz-transform&#39;: &#39;translate(&#39;+device.embedTranslateX+&#39;px, &#39;+device.embedTranslateY+&#39;px)&#39;,
+        &#39;-o-transform&#39;: &#39;translate(&#39;+device.embedTranslateX+&#39;px, &#39;+device.embedTranslateY+&#39;px)&#39;,
+        &#39;-ms-transform&#39;: &#39;translate(&#39;+device.embedTranslateX+&#39;px, &#39;+device.embedTranslateY+&#39;px)&#39;}
+        " ng-class="{&#39;hide-device-border&#39; : !device.showDeviceBorder}" style="width: 317px; height: 662px;">
+            <div class="canvas-container   portrait iphone6s phone" ng-style="{&#39;-ms-transform&#39;: device.scale != &#39;100&#39; ? &#39;scale(0.&#39;+device.scale+&#39;)&#39; : &#39;initial&#39;,
+        &#39;-ms-zoom&#39;: device.scale != &#39;100&#39; ? &#39;0.&#39;+device.scale : &#39;initial&#39;,
+        &#39;-moz-transform&#39;: device.scale != &#39;100&#39; ? &#39;scale(0.&#39;+device.scale+&#39;)&#39; : &#39;initial&#39;,
+        &#39;-o-transform&#39;: device.scale != &#39;100&#39; ? &#39;scale(0.&#39;+device.scale+&#39;)&#39; : &#39;initial&#39;,
+        &#39;-webkit-transform&#39;: device.scale != &#39;100&#39; ? &#39;scale(0.&#39;+device.scale+&#39;)&#39; : &#39;initial&#39;}" style="transform: scale(0.76);">
+        <div style="opacity: 0; transform: rotate(0deg); width: 416px; height: 870px;" ng-class="{&#39;force-opaque&#39; : device.showDeviceBorder}" ng-style="{ &#39;transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;-webkit-transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;-moz-transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;-o-transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;-ms-transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;width&#39;: device.deviceWidth+&#39;px&#39;, &#39;height&#39;: device.deviceHeight+&#39;px&#39; }" ng-show="device.generic &amp;&amp; device.deviceColor" class="ng-hide">
+            <div class="marvel-device s5 white">
+                <div class="top-bar"></div>
+                <div class="sleep"></div>
+                <div class="camera"></div>
+                <div class="sensor"></div>
+                <div class="speaker"></div>
+                <div class="screen">
+                    <!-- Content goes here -->
+                </div>
+                <div class="home"></div>
+            </div>
+        </div>
+                <img ng-show="device.name &amp;&amp; device.deviceColor &amp;&amp; !device.generic" style="opacity: 0; transform: rotate(0deg); width: 416px; height: 870px;" ng-class="{&#39;force-opaque&#39; : device.showDeviceBorder}" ng-style="{ &#39;transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;-webkit-transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;-moz-transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;-o-transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;-ms-transform&#39;: &#39;rotate(&#39; + device.rotation + &#39;deg)&#39;, &#39;width&#39;: device.deviceWidth+&#39;px&#39;, &#39;height&#39;: device.deviceHeight+&#39;px&#39; }" class="" ng-src="/images/iphone6s_white.png" src="./iphone6s_white.png">
+                <div class="1617892896210 canvas-inner-container rotate portrait  iphone6s" ng-style="{&#39;width&#39;:device.canvasInnerContainerWidth+&#39;px&#39;, &#39;height&#39;:device.canvasInnerContainerHeight+&#39;px&#39;, &#39;top&#39;:device.canvasInnerContainerTop+&#39;px&#39;, &#39;left&#39;:device.canvasInnerContainerLeft+&#39;px&#39;}" style="overflow: hidden; z-index: 1000; background-color: rgba(0, 0, 0, 0); width: 375px; height: 668px; top: 100px; left: 21px;">
+                    <div class="timeLimitCountdown progress ng-isolate-scope ng-hide" ng-show="device.timeLimitCountdown &amp;&amp; device.connection" animate="true" value="100.0 * device.timeLimitCountdown / device.timeLimitCountdownTotal" type="primary">
+  <div class="progress-bar progress-bar-primary" ng-class="type &amp;&amp; &#39;progress-bar-&#39; + type" role="progressbar" aria-valuenow="NaN" aria-valuemin="0" aria-valuemax="100" ng-style="{width: (percent &lt; 100 ? percent : 100) + &#39;%&#39;}" aria-valuetext="%" style="min-width: 0px; width: 100%;" ng-transclude=""></div>
+</div>
+                    <div class="canvas-inner-inner-container ng-hide" id="container_1617892896210" style="cursor: pointer;" ng-show="device.connection &amp;&amp; ((device.appLaunch &amp;&amp; device.noVideo) || (device.firstFrameReceived &amp;&amp; !device.noVideo))">
+                        <video class="video-player ng-hide" ng-show="device.codec === &#39;h264&#39;" id="video_1617892896210" autoplay="" width="375" height="668"></video>
+                        <video class="audio-player ng-hide" ng-show="device.codec === &#39;h264&#39;" id="audio_1617892896210" autoplay="" width="375" height="668"></video>
+                        <canvas ng-show="device.codec !== &#39;h264&#39;" class="canvas-class" id="1617892896210" width="1104" height="1104"></canvas>
+                    </div>
+                    <div style="padding: 40px;" ng-show="device.connection &amp;&amp; device.appLaunch &amp;&amp; device.noVideo" class="ng-hide">
+                        <p>
+                            App launch command sent.
+                        </p>
+                        <p>
+                            noVideo=true
+                        </p>
+                        <br>
+                        <br>
+                        <p>
+                            Mouse, touch and keyboard events are still active when this canvas is focused.
+                        </p>
+                    </div>
+                    <div ng-show="(device.connection || device.requestSessionOnConnect) &amp;&amp; ((!device.appLaunch &amp;&amp; device.noVideo) || (!device.firstFrameReceived &amp;&amp; !device.noVideo))" class="queue-holder ng-hide">
+                        <!-- ngIf: app.iFrameLoading -->
+                        <div class="queue-info" style="position: relative; width: 100%; height: 100%; text-align: center;">
+                            <div style="padding: 30px 0px 30px 0px;" class="ng-binding">
+                                Loading...
+                            </div>
+                            <div class="ion-load-c spin fs64" style="display: inline-block; z-index: 99999; opacity: .8; color: white; font-size: 64px;"></div>
+                        </div>
+                        <a ng-hide="app.whitelabel || isOnprem" href="https://appetize.io/" target="_blank">
+                            <div class="branding-container">
+                                <span class="branding" style="font-size: 20px;  display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; font-family: &#39;courier new&#39;">Powered by</span>
+                                <br>
+                                <img class="branding-logo" src="./logo1_colored_tight_sm.png">
+                                <span class="branding" style="font-size: 20px;display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; font-family: &#39;courier new&#39;">Appetize.io</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="timeoutWarningOpacity" class="device-overlay ng-hide" ng-show="device.timeoutWarning"></div>
+                    <div id="countdownWarningOpacity" class="device-overlay ng-hide" ng-show="device.countdownWarning"></div>
+                    <div class="device-overlay ng-hide" ng-show="device.countdownWarning">
+                        <div class="queue-info timeout-info">
+                            <div style="padding: 30px 0px 30px 0px;">
+                                Inactivity Timeout
+                            </div>
+                            <div class="fs64 ng-binding"></div>
+                        </div>
+                    </div>
+                    <div ng-hide="device.connection || device.queue || device.accountQueue || device.requestSessionOnConnect || (autoplay &amp;&amp; !device.notFirstRequest)">
+                        <div ng-hide="isOnprem" class="sponsored-branding-wrapper">
+                            <a ng-show="app.sponsored &amp;&amp; isEmbed &amp;&amp; !app.whitelabel" href="https://appetize.io/" target="_blank" class="">
+                                <div class="branding-container sponsored-branding-container">
+                                    <span class="branding" style="font-size: 20px;  display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; font-family: &#39;courier new&#39;;">Powered by</span>
+                                    <br>
+                                    <img style="" class="branding-logo" src="./logo1_colored_tight_sm.png">
+                                    <span class="branding" style="font-size: 20px;display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; font-family: &#39;courier new&#39;">Appetize.io</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="placeholderImage" ng-click="device.requestSession();" class="placeholder" style="overflow: hidden; background-image: url(&quot;/images/galaxy.jpg&quot;);" ng-style="{&#39;background-image&#39;: app &amp;&amp; device.showPostSession &amp;&amp; app.lastFrame &amp;&amp; app.lastFrame[device.name] ? &#39;url(&#39;+   app.lastFrame[device.name] +&#39;)&#39; : app &amp;&amp; device.showPostSession &amp;&amp; app.postSessionGraphic &amp;&amp; app.postSessionGraphic[device.name] ? &#39;url(&#39;+   app.postSessionGraphic[device.name] +&#39;)&#39; : app &amp;&amp; !device.showPostSession &amp;&amp; app.preLaunchGraphic &amp;&amp; app.preLaunchGraphic[device.name] ? &#39;url(&#39;+   app.preLaunchGraphic[device.name] +&#39;)&#39; : &#39;url(/images/galaxy.jpg)&#39;}">
+                            <div id="lastFrameOpacity" class="device-overlay ng-hide" ng-show="app &amp;&amp; device.showPostSession &amp;&amp; app.lastFrame &amp;&amp; app.lastFrame[device.name]"></div>
+                            <div id="buttonContainer" class="ng-binding" style="position: relative; padding: 0px !important; background: none;">
+                                <span ng-show="!device.showPostSession">
+                                <div class="buttonInner buttonInnerBackground ng-binding" ng-style="{background: (forceButtonColor || app.preLaunchButtonBackgroundColor || &#39;#009ddc&#39;), opacity: (app.preLaunchButtonBackgroundOpacity || .5)}" style="background: rgb(0, 157, 220); opacity: 0.5;">Tap to Play</div>
+                                <div class="buttonInner buttonInnerText ng-binding" ng-style="{color: (app.preLaunchButtonTextColor || &#39;#FFFFFF&#39;)}" style="color: rgb(255, 255, 255);">Tap to Play</div>
+                            </span>
+                                <span ng-show="device.showPostSession" class="ng-hide">
+                                <div class="buttonInner buttonInnerBackground ng-binding" ng-style="{background: (forceButtonColor || app.postSessionButtonBackgroundColor || &#39;#009ddc&#39;), opacity: (app.postSessionButtonBackgroundOpacity || .5)}" style="background: rgb(0, 157, 220); opacity: 0.5;">Tap to Play</div>
+                                <div class="buttonInner buttonInnerText ng-binding" ng-style="{color: (app.postSessionButtonTextColor || &#39;#FFFFFF&#39;)}" style="color: rgb(255, 255, 255);">Tap to Play</div>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div ng-show="device.queue &amp;&amp; !device.connection" class="queue-holder no-user-select ng-hide">
+                        <div class="queue-info">
+                            <div style="padding: 30px 0px 30px 0px;">
+                                Place in queue
+                            </div>
+                            <div class="fs64 ng-binding">false</div>
+                        </div>
+                        <a ng-hide="app.whitelabel || isOnprem" href="https://appetize.io/" target="_blank">
+                            <div class="branding-container">
+                                <span class="branding" style="font-size: 20px;  display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; font-family: &#39;courier new&#39;">Powered by</span>
+                                <br>
+                                <img class="branding-logo" src="./logo1_colored_tight_sm.png">
+                                <span class="branding" style="font-size: 20px;display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; font-family: &#39;courier new&#39;">Appetize.io</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div ng-show="device.accountQueue &amp;&amp; !device.connection" class="queue-holder no-user-select ng-hide">
+                        <div class="queue-info">
+                            <div style="padding: 30px 0px 30px 0px;">
+                                Account-level queue
+                            </div>
+                            <div class="fs64 ng-binding">false</div>
+                        </div>
+                        <a ng-hide="app.whitelabel || isOnprem" href="https://appetize.io/" target="_blank">
+                            <div class="branding-container">
+                                <span class="branding" style="font-size: 20px;  display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; font-family: &#39;courier new&#39;">Powered by</span>
+                                <br>
+                                <img class="branding-logo" src="./logo1_colored_tight_sm.png">
+                                <span class="branding" style="font-size: 20px;display: inline-block; padding-left: 5px; margin: 0px; vertical-align: middle; font-family: &#39;courier new&#39;">Appetize.io</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div ng-show="device.platform == &#39;ios&#39; &amp;&amp; device.connection &amp;&amp; ((device.appLaunch &amp;&amp; device.noVideo) || (device.firstFrameReceived &amp;&amp; !device.noVideo)) &amp;&amp; !app.disableHome" id="homeButtonContainer" ng-style="{&#39;width&#39;: device.homeButtonContainer.width, &#39;height&#39;: device.homeButtonDimensions.height, &#39;left&#39;: device.homeButtonContainer.left, &#39;top&#39;: device.homeButtonContainer.top, &#39;right&#39;: device.homeButtonContainer.right, &#39;bottom&#39;: device.homeButtonContainer.bottom }" class="ng-hide" style="width: 100%; height: 60px; left: initial; top: initial; right: initial; bottom: 20px;">
+                    <span id="homeButton" ng-click="device.emitHomeButton();" ng-style="{&#39;width&#39;: device.homeButtonDimensions.width+&#39;px&#39;, &#39;height&#39;: device.homeButtonDimensions.height+&#39;px&#39;}" style="width: 60px; height: 60px;">
+                </span></div>
+                <div id="rotateButtons" ng-show="device.type!=&#39;watch&#39; &amp;&amp; !device.physical" ng-style="{&#39;display&#39;: device.showRotateButtons ? &#39;block&#39; : undefined, &#39;width&#39;: device.rotateButtonsWidth + &#39;px&#39;, &#39;height&#39;: device.rotateButtonsHeight+&#39;px&#39;, &#39;bottom&#39;: device.rotateButtonsPosition.bottom+&#39;px&#39;, &#39;right&#39;: device.rotateButtonsPosition.right+&#39;px&#39;}" style="width: 140px; height: 140px; bottom: -60px; right: -60px;">
+                    <btn class="cw270" style="position: absolute; right: 0px; bottom: 60px;">
+                        <a ng-click="device.rotateLeft();" class="rotate "><img style="width: 60px;" src="./rotate1.png"></a>
+                    </btn>
+                    <btn class="cw270" style="position: absolute; right: 60px; bottom: 0px;">
+                        <a ng-click="device.rotateRight();" class="rotate "><img style="height: 60px;" src="./rotate2.png"></a>
+                    </btn>
+                </div>
+            </div>
+        </div>
+        <div ng-show="device.enableAdb &amp;&amp; !isEmbed &amp;&amp; device.platform === &#39;android&#39;" style="max-width: 500px; text-align: left; margin-top: 50px; margin-bottom: 20px; margin: 0 auto; padding-bottom: 40px;" class="ng-hide">
+            <h4>Create an ADB tunnel to this device</h4>
+            <div ng-hide="device.adbConnectionInfo">
+                <p class="muted">Shell command will appear here once ADB server is ready.</p>
+            </div>
+            <div ng-show="device.adbConnectionInfo" class="ng-hide">
+                <p class="muted">Paste this command into shell, then run adb devices.</p>
+                <div hljs="" hljs-source="device.adbConnectionInfo | adbconnectioninfo" id="adbConnectionInfo"><pre><code class="hljs"></code></pre></div>
+                <button style="float: right;" class="btn btn-primary btn-xs ng-isolate-scope" ngclipboard="" ngclipboard-success="onClipboardSuccess(e);" data-clipboard-target="#adbConnectionInfo" id="ngclipboard1617892896696">Copy to clipboard</button>
+            </div>
+        </div>
+        <div class="options text-center" id="scale-options">
+            <div class="paragraph muted ng-hide" style="padding-top: 20px; padding-bottom: 20px;" ng-show="isDemo &amp;&amp; !isOnprem">
+                Note: Demo has a 60 second time limit
+            </div>
+            <!-- ngIf: device.enableAudio -->
+            <div ng-show="(device.appLaunch &amp;&amp; device.noVideo) || (device.firstFrameReceived &amp;&amp; !device.noVideo)" style="opacity: .8; padding-bottom:30px;" class="btn-group ng-hide">
+                <span class="btn btn-sm btn-primary dark" style="opacity: 1 !important; " ng-click="device.screenshot()">Save screenshot</span>
+            </div>
+            <div ng-show="(device.appLaunch &amp;&amp; device.noVideo) || (device.firstFrameReceived &amp;&amp; !device.noVideo)" style="opacity: .8; padding-bottom:30px;" class="btn-group ng-hide">
+                <span class="btn btn-file btn-primary btn-sm dark" style="opacity: 1 !important; ">
+                Add Media
+                <input ng-disabled="device.addMediaDisabled" style="display: inline-block;" type="file" accept="image/*" ng-file-select="device.addMedia($files)">
+                </span>
+            </div>
+            <div class="option-group">
+                <div class="btn-group">
+                    <label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="device.scale" btn-radio="25" ng-click="device.updateScale(25)">25%</label>
+                    <label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="device.scale" btn-radio="50" ng-click="device.updateScale(50)">50%</label>
+                    <label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="device.scale" btn-radio="75" ng-click="device.updateScale(75)">75%</label>
+                    <label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="device.scale" btn-radio="100" ng-click="device.updateScale(100)">100%</label>
+                </div>
+            </div>
+            <div class="option-group" ng-show="(device.platform==&#39;ios&#39; || !app || app.publicKey.substr(0,11)===&#39;standalone_&#39;) &amp;&amp; device.type!=&#39;watch&#39; &amp;&amp; !adbConnect">
+                <div class="btn-group">
+                    <!-- ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 5s</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 6</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 6+</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope active ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 6s</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 6s+</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 7</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 7+</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 8</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 8+</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone X</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone XS</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone XS Max</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 11 Pro</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPhone 11 Pro Max</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPad Air</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPad Air 2</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="iosDevice" ng-click="device.updateDevice(iosDevice)" ng-repeat="(iosDevice, osVersion) in deviceConfig.availableDevices[&#39;ios&#39;]">iPod Touch 7th Gen</label><!-- end ngRepeat: (iosDevice, osVersion) in deviceConfig.availableDevices['ios'] -->
+                </div>
+            </div>
+            <div class="option-group ng-hide" ng-show="(device.platform==&#39;android&#39; || !app || app.publicKey.substr(0,11) ===&#39;standalone_&#39;) &amp;&amp; device.type!=&#39;watch&#39;">
+                <div class="btn-group">
+                    <!-- ngRepeat: (androidDevice, osVersion) in deviceConfig.availableDevices['android'] --><label ng-hide="androidDevice == &#39;hammerhead&#39; &amp;&amp; app &amp;&amp; app.publicKey &amp;&amp; app.publicKey.substr(0,3) === &#39;ag_&#39;" class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="androidDevice" ng-click="device.updateDevice(androidDevice)" ng-repeat="(androidDevice, osVersion) in deviceConfig.availableDevices[&#39;android&#39;]">Nexus 5</label><!-- end ngRepeat: (androidDevice, osVersion) in deviceConfig.availableDevices['android'] --><label ng-hide="androidDevice == &#39;hammerhead&#39; &amp;&amp; app &amp;&amp; app.publicKey &amp;&amp; app.publicKey.substr(0,3) === &#39;ag_&#39;" class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="androidDevice" ng-click="device.updateDevice(androidDevice)" ng-repeat="(androidDevice, osVersion) in deviceConfig.availableDevices[&#39;android&#39;]">Nexus 7</label><!-- end ngRepeat: (androidDevice, osVersion) in deviceConfig.availableDevices['android'] --><label ng-hide="androidDevice == &#39;hammerhead&#39; &amp;&amp; app &amp;&amp; app.publicKey &amp;&amp; app.publicKey.substr(0,3) === &#39;ag_&#39;" class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="androidDevice" ng-click="device.updateDevice(androidDevice)" ng-repeat="(androidDevice, osVersion) in deviceConfig.availableDevices[&#39;android&#39;]">Nexus 9</label><!-- end ngRepeat: (androidDevice, osVersion) in deviceConfig.availableDevices['android'] --><label ng-hide="androidDevice == &#39;hammerhead&#39; &amp;&amp; app &amp;&amp; app.publicKey &amp;&amp; app.publicKey.substr(0,3) === &#39;ag_&#39;" class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="androidDevice" ng-click="device.updateDevice(androidDevice)" ng-repeat="(androidDevice, osVersion) in deviceConfig.availableDevices[&#39;android&#39;]">Pixel 4</label><!-- end ngRepeat: (androidDevice, osVersion) in deviceConfig.availableDevices['android'] --><label ng-hide="androidDevice == &#39;hammerhead&#39; &amp;&amp; app &amp;&amp; app.publicKey &amp;&amp; app.publicKey.substr(0,3) === &#39;ag_&#39;" class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="androidDevice" ng-click="device.updateDevice(androidDevice)" ng-repeat="(androidDevice, osVersion) in deviceConfig.availableDevices[&#39;android&#39;]">Pixel 4 XL</label><!-- end ngRepeat: (androidDevice, osVersion) in deviceConfig.availableDevices['android'] --><label ng-hide="androidDevice == &#39;hammerhead&#39; &amp;&amp; app &amp;&amp; app.publicKey &amp;&amp; app.publicKey.substr(0,3) === &#39;ag_&#39;" class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-model="device.name" btn-radio="androidDevice" ng-click="device.updateDevice(androidDevice)" ng-repeat="(androidDevice, osVersion) in deviceConfig.availableDevices[&#39;android&#39;]">Galaxy Tab S7</label><!-- end ngRepeat: (androidDevice, osVersion) in deviceConfig.availableDevices['android'] -->
+                </div>
+            </div>
+            <div class="option-group" ng-hide="device.type==&#39;watch&#39;">
+                <div class="btn-group">
+                    <!-- ngRepeat: osVersion in deviceConfig.availableDevices[device.platform][device.name] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-repeat="osVersion in deviceConfig.availableDevices[device.platform][device.name]" ng-model="device.osVersion" btn-radio="osVersion" ng-click="device.updateOsVersion(osVersion)">ios 10.3</label><!-- end ngRepeat: osVersion in deviceConfig.availableDevices[device.platform][device.name] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-repeat="osVersion in deviceConfig.availableDevices[device.platform][device.name]" ng-model="device.osVersion" btn-radio="osVersion" ng-click="device.updateOsVersion(osVersion)">ios 11.4</label><!-- end ngRepeat: osVersion in deviceConfig.availableDevices[device.platform][device.name] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-repeat="osVersion in deviceConfig.availableDevices[device.platform][device.name]" ng-model="device.osVersion" btn-radio="osVersion" ng-click="device.updateOsVersion(osVersion)">ios 12.4</label><!-- end ngRepeat: osVersion in deviceConfig.availableDevices[device.platform][device.name] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope active ng-not-empty" ng-repeat="osVersion in deviceConfig.availableDevices[device.platform][device.name]" ng-model="device.osVersion" btn-radio="osVersion" ng-click="device.updateOsVersion(osVersion)">ios 13.7</label><!-- end ngRepeat: osVersion in deviceConfig.availableDevices[device.platform][device.name] --><label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-binding ng-scope ng-not-empty" ng-repeat="osVersion in deviceConfig.availableDevices[device.platform][device.name]" ng-model="device.osVersion" btn-radio="osVersion" ng-click="device.updateOsVersion(osVersion)">ios 14.1</label><!-- end ngRepeat: osVersion in deviceConfig.availableDevices[device.platform][device.name] -->
+                </div>
+            </div>
+            <div class="option-group">
+                <div ng-hide="device.type==&#39;watch&#39;" class="btn-group">
+                    <label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid ng-not-empty" ng-model="device.deviceColor" btn-radio="&#39;black&#39;" ng-click="device.updateColor(&#39;black&#39;)">Black</label>
+                    <label class="btn btn-sm btn-primary ng-pristine ng-untouched ng-valid active ng-not-empty" ng-model="device.deviceColor" btn-radio="&#39;white&#39;" ng-click="device.updateColor(&#39;white&#39;)">White</label>
+                </div>
+            </div>
+            <div class="option-group">
+                <div ng-show="device.type!=&#39;watch&#39; &amp;&amp; (loggedIn || isDemo)" class="btn-group ng-hide">
+                    <label class="btn btn-sm btn-primary ng-binding" ng-class="{ &#39;active&#39; : device.proxy == &#39;intercept&#39; }" ng-click="device.toggleIntercept()">Network intercept: Off</label>
+                </div>
+            </div>
+            <div class="option-group">
+                <div ng-show="device.type!=&#39;watch&#39; &amp;&amp; (loggedIn || isDemo)" class="btn-group ng-hide">
+                    <label class="btn btn-sm btn-primary ng-binding active" ng-class="{ &#39;active&#39; : device.debug }" ng-click="device.toggleDebug(!device.debug)">Debug log: On</label>
+                </div>
+            </div>
+            <div class="option-group">
+                <div ng-show="device.type!=&#39;watch&#39; &amp;&amp; (loggedIn || isDemo) &amp;&amp; device.platform === &#39;android&#39;" class="btn-group ng-hide">
+                    <label class="btn btn-sm btn-primary ng-binding" ng-class="{ &#39;active&#39; : device.enableAdb }" ng-click="device.toggleAdb(!device.enableAdb)">ADB tunnel: Off</label>
+                </div>
+            </div>
+        </div>
+        <div id="dummy" class="scale76 iphone6s phone" ng-style="{&#39;width&#39;:device.canvasWrapperWidth+&#39;px&#39;, &#39;height&#39;:device.canvasWrapperHeight+&#39;px&#39;}" style="width: 317px; height: 662px;"></div>
+        <div style="opacity: 0; width: 0px; height: 0px; position: absolute; top: 0px; left: 0px; background-image: url(&quot;&quot;);" ng-show="app &amp;&amp; device.showPostSession &amp;&amp; app.postSessionGraphic[device.name]" ng-style="{&#39;background-image&#39;: &#39;url(&#39;+   app.postSessionGraphic[device.name] +&#39;)&#39;}" class="ng-hide">
+        </div>
+    </div>
+    <div ng-show="device.proxy == &#39;intercept&#39; &amp;&amp; (!isEmbed || device.embedLogs)" class="ng-hide">
+        <div class="networkLog text-left" style="min-height: 400px;">
+            <h4>Network Log</h4>
+            
+            <span ng-show="device.chromeDevToolsUrl" class="ng-hide">
+            <p>
+                <a class="white-link" target="_blank">View in Chrome DevTools</a> <span class="muted">(only works in chrome browser)</span>
+            </p>
+            </span>
+            <p>
+                <a class="pull-right ng-hide" ng-show="device.connectionToken &amp;&amp; device.networkLogSimple" ng-click="device.downloadHAR();" target="_blank">Download HAR</a>
+            </p>
+            <table class="table table-sm" table-height="400px" fixed-header="">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Size (kb)</th>
+                        <th>Time (ms)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ngRepeat: (requestId, networkEntry) in device.networkLogSimple -->
+                </tbody>
+            </table>
+        </div>
+        <div class="networkRequestInfo ng-hide" ng-show="device.selectedRequestId" style="text-align: left;">
+            <strong>Request status:</strong>
+            <br>
+            <code class="ng-binding"> </code>
+            <br>
+            <code class="ng-binding"></code><code class="ng-binding"></code>
+            <br>
+            <br>
+            <strong>Request headers:</strong>
+            <br>
+            <!-- ngRepeat: header in device.networkLog[device.selectedRequestId].request.headers -->
+            <br>
+            <strong>Response headers:</strong>
+            <br>
+            <!-- ngRepeat: header in device.networkLog[device.selectedRequestId].response.headers -->
+            <br>
+            <strong>Content:</strong>
+            <br>
+            <code class="ng-binding">not available</code>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div ng-show="device.debug &amp;&amp; (!isEmbed || device.embedLogs)" class="text-left ng-hide">
+        <h4>Debug Log</h4>
+        <p>
+            <a class="pull-right ng-hide" ng-show="device.connectionToken &amp;&amp; device.debugConsole &amp;&amp; device.debugConsole.length &gt; 1" ng-click="device.downloadDebugLog();" target="_blank">Download debug log</a>
+        </p>
+        <div select-on-dblclick="" id="debugConsole" scroll-glue="" perfect-scrollbar="" class="cssEditor scroller text-left" style="resize: vertical; max-height: 600px; overflow-y: scroll;"><pre style="resize:none;"><code style="padding-right: 10px;" class="ng-binding">Log messages will follow once session has started...
+</code></pre></div>
+    </div>
+</div><!-- end ngRepeat: device in devices | reverse -->
+</div>
+        </div>
+
+        <div class="error ng-hide" ng-show="error">
+            <h4 class="ng-binding">Error loading app, please verify URL</h4>
+        </div>
+        <div class="error ng-hide" ng-show="mustReplacePublicKey">
+            <h4>
+                Please replace &lt;PUBLIC KEY&gt; with your app's publicKey,
+                also excluding the &lt; and &gt;
+            </h4>
+        </div>
+    </div>
+    <svg class="cross cross--bottom" shape-rendering="geometricPrecision" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 100" enable-background="new 0 0 612 100" xml:space="preserve">
+        <polygon fill="transparent" points="-189,0 214,50.0 -189,100" class="cross__left"></polygon>
+        <polygon fill="transparent" points="617,0 617,100 214,50.0" class="cross__right"></polygon>
+        <polygon fill="#ffffff" points="-189,0 214,50.0 617,0 617,-5 -189,-5" class="cross__top"></polygon>
+        <polygon fill="#ffffff" points="617,100 214,50.0 -189,100 617,105 -189,105" class="cross__bottom"></polygon>
+    </svg>
+</section>
+</div>
+        <!--[if lt IE 9]>
+            <script src="bower_components/es5-shim/es5-shim.js"></script>
+            <script src="bower_components/json3/lib/json3.min.js"></script>
+        <![endif]-->
+        <script src="./lib.364df511.js"></script>
+        <script src="./jscolor.js"></script>
+        <script src="./jmuxer.min.js"></script>
+        <script src="./application.454d68b3.js"></script>
+        <!-- begin GONATIVE code -->
+        <script>
+            $(document).ready(function () {
+                function is_touch_device() {
+                    return (
+                        'ontouchstart' in window || // works on most browsers
+                        'onmsgesturechange' in window
+                    ); // works on ie10
+                }
+                if (is_touch_device()) {
+                    $('body').addClass('touch');
+                } else {
+                    $('body').addClass('notouch');
+                }
+            });
+        </script>
+        <!-- end GONATIVE code -->
+        
+        <!-- begin GOOGLEANALYTICS code -->
+        <script>
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-36826808-5']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src =
+                    ('https:' == document.location.protocol
+                        ? 'https://ssl'
+                        : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            // _gaq.push(["_trackPageview"]);
+        </script>
+        <!--end GOOGLEANALYTICS code -->
+        <!-- begin PRERENDER code -->
+        <script>
+            window.prerenderReady = false;
+
+            function setReady() {
+                window.prerenderReady = true;
+            }
+            setTimeout(setReady, 5000);
+        </script>
+        <!-- end PRERENDER code -->
+        
+        
+        
+        
+    
+
+</body></html>

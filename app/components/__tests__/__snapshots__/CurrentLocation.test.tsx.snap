@@ -1,0 +1,355 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create item 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "borderColor": "#e0e0e0",
+        "shadowColor": "#000",
+      },
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "flex-end",
+        "padding": 31.428571428571427,
+      },
+    ]
+  }
+  testID="firstView"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "#e0e0e0",
+          "shadowColor": "#000",
+        },
+        Object {
+          "alignItems": "center",
+          "marginBottom": 125.71428571428571,
+          "width": "100%",
+        },
+      ]
+    }
+    testID="SecondView"
+  >
+    <Image
+      source={
+        Object {
+          "uri": "https://picsum.photos/200/300",
+        }
+      }
+      style={
+        Object {
+          "height": 392.85714285714283,
+          "width": 314.2857142857143,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "#e0e0e0",
+          "shadowColor": "#000",
+        },
+        Object {
+          "alignItems": "center",
+          "marginBottom": 125.71428571428571,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#fff",
+            "borderColor": "#e0e0e0",
+            "shadowColor": "#000",
+          },
+          Object {
+            "marginBottom": 31.428571428571427,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+            },
+            Object {
+              "fontFamily": "OpenSans-Bold",
+              "fontSize": 23.57142857142857,
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="helperText"
+      >
+        grocery uses your location to show the resturant near you!
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#D70F64",
+          "borderRadius": 15.714285714285714,
+          "justifyContent": "flex-end",
+          "opacity": 1,
+          "padding": 23.57142857142857,
+          "shadowColor": "#000",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+            },
+            Object {
+              "fontFamily": "OpenSans-Bold",
+              "fontSize": 23.57142857142857,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Use Current Location
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "opacity": 1,
+        "shadowColor": "#000",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#D70F64",
+          },
+          Object {
+            "fontFamily": "OpenSans-Bold",
+            "fontSize": 23.57142857142857,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Select another location
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`should render correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+        "borderColor": "#e0e0e0",
+        "shadowColor": "#000",
+      },
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "flex-end",
+        "padding": 31.428571428571427,
+      },
+    ]
+  }
+  testID="firstView"
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "#e0e0e0",
+          "shadowColor": "#000",
+        },
+        Object {
+          "alignItems": "center",
+          "marginBottom": 125.71428571428571,
+          "width": "100%",
+        },
+      ]
+    }
+    testID="SecondView"
+  >
+    <Image
+      source={
+        Object {
+          "uri": "https://picsum.photos/200/300",
+        }
+      }
+      style={
+        Object {
+          "height": 392.85714285714283,
+          "width": 314.2857142857143,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "#e0e0e0",
+          "shadowColor": "#000",
+        },
+        Object {
+          "alignItems": "center",
+          "marginBottom": 125.71428571428571,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#fff",
+            "borderColor": "#e0e0e0",
+            "shadowColor": "#000",
+          },
+          Object {
+            "marginBottom": 31.428571428571427,
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+            },
+            Object {
+              "fontFamily": "OpenSans-Bold",
+              "fontSize": 23.57142857142857,
+              "textAlign": "center",
+            },
+          ]
+        }
+        testID="helperText"
+      >
+        grocery uses your location to show the resturant near you!
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#D70F64",
+          "borderRadius": 15.714285714285714,
+          "justifyContent": "flex-end",
+          "opacity": 1,
+          "padding": 23.57142857142857,
+          "shadowColor": "#000",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#fff",
+            },
+            Object {
+              "fontFamily": "OpenSans-Bold",
+              "fontSize": 23.57142857142857,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Use Current Location
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "opacity": 1,
+        "shadowColor": "#000",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#D70F64",
+          },
+          Object {
+            "fontFamily": "OpenSans-Bold",
+            "fontSize": 23.57142857142857,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      Select another location
+    </Text>
+  </View>
+</View>
+`;
