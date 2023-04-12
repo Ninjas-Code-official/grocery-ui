@@ -14,7 +14,7 @@ export default function useColorScheme(delay = 250): NonNullable<ColorSchemeName
 
     return () => {
       resetCurrentTimeout();
-      Appearance.removeChangeListener(onColorSchemeChange);
+      Appearance.addChangeListener(onColorSchemeChange);
     };
   },[])
 

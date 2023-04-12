@@ -1,20 +1,180 @@
 diff --git a/node_modules/react-native-material-textfield/src/components/affix/index.js b/node_modules/react-native-material-textfield/src/components/affix/index.js
-index 0f85022..c12b3a6 100644
+index 0f85022..e467adb 100644
 --- a/node_modules/react-native-material-textfield/src/components/affix/index.js
 +++ b/node_modules/react-native-material-textfield/src/components/affix/index.js
-@@ -11,7 +11,7 @@ export default class Affix extends PureComponent {
+@@ -9,26 +9,26 @@ export default class Affix extends PureComponent {
+     numberOfLines: 1,
+   };
  
-   static propTypes = {
-     numberOfLines: PropTypes.number,
+-  static propTypes = {
+-    numberOfLines: PropTypes.number,
 -    style: Animated.Text.propTypes.style,
-+    style: PropTypes.object,
++  // static propTypes = {
++  //   numberOfLines: PropTypes.number,
++  //   style: PropTypes.object,
  
-     color: PropTypes.string.isRequired,
-     fontSize: PropTypes.number.isRequired,
+-    color: PropTypes.string.isRequired,
+-    fontSize: PropTypes.number.isRequired,
++  //   color: PropTypes.string.isRequired,
++  //   fontSize: PropTypes.number.isRequired,
+ 
+-    type: PropTypes
+-      .oneOf(['prefix', 'suffix'])
+-      .isRequired,
++  //   type: PropTypes
++  //     .oneOf(['prefix', 'suffix'])
++  //     .isRequired,
+ 
+-    labelAnimation: PropTypes
+-      .instanceOf(Animated.Value)
+-      .isRequired,
++  //   labelAnimation: PropTypes
++  //     .instanceOf(Animated.Value)
++  //     .isRequired,
+ 
+-    children: PropTypes.oneOfType([
+-      PropTypes.arrayOf(PropTypes.node),
+-      PropTypes.node,
+-    ]),
+-  };
++  //   children: PropTypes.oneOfType([
++  //     PropTypes.arrayOf(PropTypes.node),
++  //     PropTypes.node,
++  //   ]),
++  // };
+ 
+   render() {
+     let { labelAnimation, style, children, type, fontSize, color } = this.props;
+diff --git a/node_modules/react-native-material-textfield/src/components/counter/index.js b/node_modules/react-native-material-textfield/src/components/counter/index.js
+index 35d3264..e4258cd 100644
+--- a/node_modules/react-native-material-textfield/src/components/counter/index.js
++++ b/node_modules/react-native-material-textfield/src/components/counter/index.js
+@@ -5,15 +5,15 @@ import { Text } from 'react-native';
+ import styles from './styles';
+ 
+ export default class Counter extends PureComponent {
+-  static propTypes = {
+-    count: PropTypes.number.isRequired,
+-    limit: PropTypes.number,
++  // static propTypes = {
++  //   count: PropTypes.number.isRequired,
++  //   limit: PropTypes.number,
+ 
+-    baseColor: PropTypes.string.isRequired,
+-    errorColor: PropTypes.string.isRequired,
++  //   baseColor: PropTypes.string.isRequired,
++  //   errorColor: PropTypes.string.isRequired,
+ 
+-    style: Text.propTypes.style,
+-  };
++  //   style: Text.propTypes.style,
++  // };
+ 
+   render() {
+     let { count, limit, baseColor, errorColor, style } = this.props;
 diff --git a/node_modules/react-native-material-textfield/src/components/field/index.js b/node_modules/react-native-material-textfield/src/components/field/index.js
-index 494bbaa..7e7ac9c 100644
+index 494bbaa..35cd777 100644
 --- a/node_modules/react-native-material-textfield/src/components/field/index.js
 +++ b/node_modules/react-native-material-textfield/src/components/field/index.js
+@@ -65,60 +65,60 @@ export default class TextField extends PureComponent {
+     disabled: false,
+   };
+ 
+-  static propTypes = {
+-    ...TextInput.propTypes,
++  // static propTypes = {
++  //   ...TextInput.propTypes,
+ 
+-    animationDuration: PropTypes.number,
++  //   animationDuration: PropTypes.number,
+ 
+-    fontSize: PropTypes.number,
+-    labelFontSize: PropTypes.number,
++  //   fontSize: PropTypes.number,
++  //   labelFontSize: PropTypes.number,
+ 
+-    contentInset: PropTypes.shape({
+-      top: PropTypes.number,
+-      label: PropTypes.number,
+-      input: PropTypes.number,
+-      left: PropTypes.number,
+-      right: PropTypes.number,
+-    }),
++  //   contentInset: PropTypes.shape({
++  //     top: PropTypes.number,
++  //     label: PropTypes.number,
++  //     input: PropTypes.number,
++  //     left: PropTypes.number,
++  //     right: PropTypes.number,
++  //   }),
+ 
+-    labelOffset: Label.propTypes.offset,
++  //   labelOffset: Label.propTypes.offset,
+ 
+-    labelTextStyle: Text.propTypes.style,
+-    titleTextStyle: Text.propTypes.style,
+-    affixTextStyle: Text.propTypes.style,
++  //   labelTextStyle: Text.propTypes.style,
++  //   titleTextStyle: Text.propTypes.style,
++  //   affixTextStyle: Text.propTypes.style,
+ 
+-    tintColor: PropTypes.string,
+-    textColor: PropTypes.string,
+-    baseColor: PropTypes.string,
++  //   tintColor: PropTypes.string,
++  //   textColor: PropTypes.string,
++  //   baseColor: PropTypes.string,
+ 
+-    label: PropTypes.string,
+-    title: PropTypes.string,
++  //   label: PropTypes.string,
++  //   title: PropTypes.string,
+ 
+-    characterRestriction: PropTypes.number,
++  //   characterRestriction: PropTypes.number,
+ 
+-    error: PropTypes.string,
+-    errorColor: PropTypes.string,
++  //   error: PropTypes.string,
++  //   errorColor: PropTypes.string,
+ 
+-    lineWidth: PropTypes.number,
+-    activeLineWidth: PropTypes.number,
+-    disabledLineWidth: PropTypes.number,
++  //   lineWidth: PropTypes.number,
++  //   activeLineWidth: PropTypes.number,
++  //   disabledLineWidth: PropTypes.number,
+ 
+-    lineType: Line.propTypes.lineType,
+-    disabledLineType: Line.propTypes.lineType,
++  //   lineType: Line.propTypes.lineType,
++  //   disabledLineType: Line.propTypes.lineType,
+ 
+-    disabled: PropTypes.bool,
++  //   disabled: PropTypes.bool,
+ 
+-    formatText: PropTypes.func,
++  //   formatText: PropTypes.func,
+ 
+-    renderLeftAccessory: PropTypes.func,
+-    renderRightAccessory: PropTypes.func,
++  //   renderLeftAccessory: PropTypes.func,
++  //   renderRightAccessory: PropTypes.func,
+ 
+-    prefix: PropTypes.string,
+-    suffix: PropTypes.string,
++  //   prefix: PropTypes.string,
++  //   suffix: PropTypes.string,
+ 
+-    containerStyle: (ViewPropTypes || View.propTypes).style,
+-    inputContainerStyle: (ViewPropTypes || View.propTypes).style,
+-  };
++  //   containerStyle: (ViewPropTypes || View.propTypes).style,
++  //   inputContainerStyle: (ViewPropTypes || View.propTypes).style,
++  // };
+ 
+   static inputContainerStyle = styles.inputContainer;
+ 
 @@ -222,6 +222,7 @@ export default class TextField extends PureComponent {
      let options = {
        toValue: this.focusState(),

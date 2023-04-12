@@ -37,7 +37,7 @@ export default function SelectLocation() {
     const gogoleRef = useRef()
     const getCurrentLocation = async () => {
         setIsLoading(true)
-        let { status, canAskAgain } = await Location.requestPermissionsAsync();
+        let { status, canAskAgain } = await Location.requestForegroundPermissionsAsync();
         if (status !== 'granted') {
             FlashMessage({
                 message:
