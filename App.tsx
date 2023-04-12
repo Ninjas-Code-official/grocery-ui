@@ -9,6 +9,10 @@ import useColorScheme from './app/hooks/useColorScheme';
 import Navigation from './app/navigation';
 import initAsync from './app/i18n';
 
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+LogBox.ignoreAllLogs();//Ignore all log notifications
+
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();

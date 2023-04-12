@@ -12,7 +12,7 @@ export default function CurrentLocation(props: any) {
   const getCurrentLocation = async () => {
     setLoading(true)
     console.log('this render')
-    let { status, canAskAgain } = await Location.requestPermissionsAsync();
+    let { status, canAskAgain } = await Location.requestForegroundPermissionsAsync();
     if (status !== 'granted') {
       setLoading(false);
       FlashMessage({
