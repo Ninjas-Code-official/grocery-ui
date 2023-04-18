@@ -1,6 +1,5 @@
 # React Native Grocery App Theme
 
-![Project thumbnail](./contributingGuides/thumbnail.png)
 Grocery is an outstanding E-commerce UI theme starter kit, developed in React Native and Expo for both iOS and Android. With a strong emphasis on aesthetics and best coding practices, it is the perfect solution for your next grocery-based E-commerce project. The theme is fully customizable, allowing you to tailor it to your specific requirements. The project flow is designed to enable quick and easy implementation for a real-world application with minimal changes required. Essential components such as Main Landing, Product Listing, Shopping Cart, Rating and Reviews, Editing Profile, Editing Address, Payment Screens, and Orders Screen are pre-built into the theme, reducing the need for creating anything from scratch. The UI is designed from scratch, with no reliance on frameworks or libraries, ensuring that components are easy to customize and reducing the code footprint. Grocery is the perfect solution for building an efficient and visually appealing E-commerce app that is tailored to your grocery business needs.
 
 <p align="center">
@@ -31,7 +30,7 @@ Grocery UI Theme will come with expo project.
 
 ####Install packages
 
--      cd e-commerce-app
+-      cd grocery-ui-app
 -      npm install (or yarn install)
 
 ##Run Grocery UI in your Device:
