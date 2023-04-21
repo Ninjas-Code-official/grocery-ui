@@ -16,6 +16,7 @@ Ecommero is made using some core libraries for handling navigation React Navigat
 ##Installation
 Grocery is easy to install and use. Its focus is on good design so you don't have to make major changes in design as well as easy. The tools used in making Grocery is to make development experience much simpler.<br>
 Grocery UI Theme will come with expo project.
+
 ####System Requirements
 
 - Globally installed node >= 14
@@ -51,10 +52,6 @@ Grocery UI Theme will come with expo project.
 Follow the documentation to install and get started with the development:
 
 - [Documentation](https://sharan-gohar.gitbook.io/grocery-app/)
-- [Product Page](https://market.nativebase.io/view/react-native-grocery-app-theme)
-- [License Page](https://market.nativebase.io/licenses)
-
-Happy coding!
 
 ## Get the Latest News
 
